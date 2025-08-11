@@ -98,4 +98,29 @@ Augmentation techniques used to increase dataset diversity and improve robustnes
 
 Note: Rotation was removed after error analysis showed it degraded performance due to anchor orientation mismatch.
 
+## 📊 Results
 
+The model was evaluated under four different scenarios:  
+1. Default anchors — without augmentation  
+2. Modified anchors — without augmentation  
+3. Default anchors — with augmentation  
+4. Modified anchors — with augmentation  
+
+Performance metrics were calculated at IoU = 0.5:
+
+| Scenario | Precision (%) | Recall (%) | F1-score (%) | Test mAP (%) |
+|----------|---------------|------------|--------------|--------------|
+| Default anchors (no aug) | 91.2 | 86.3 | 88.6 | 85.73 |
+| Modified anchors (no aug) | 89.8 | 87.1 | 88.4 | 87.46 |
+| **Default anchors + Augmentation** | 92.8 | **97.7** | **95.1** | **98.1** |
+| **Modified anchors + Augmentation** | **99.1** | 90.9 | 94.8 | 92.96 |
+
+### Key Observations
+- **Highest recall** was achieved with default anchors and augmentation (97.7%).  
+- **Highest precision** was achieved with modified anchors and augmentation (99.1%).  
+- Anchor modification increased precision but reduced recall.  
+- Data augmentation significantly improved recall across both anchor configurations.  
+
+<p align="center">
+  <img src="docs/results_chart.png" alt="Results comparison chart" width="600">
+</p>
