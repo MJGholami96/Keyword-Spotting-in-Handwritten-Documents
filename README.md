@@ -125,7 +125,7 @@ Performance metrics were calculated at IoU = 0.5:
 - Default anchor scenario in two stages of training and validation
 
 <p align="center">
-  <img src="output_pics/boundingbox_loss.jpg" alt="Sample dataset form" width="400">
-  <img src="output_pics/calssification_loss.jpg" alt="Sample dataset form" width="400">
-  <img src="output_pics/mAP.jpg" alt="Sample dataset form" width="400">
+  <img src="output_pics/boundingbox_loss.png" alt="Sample dataset form" width="400">
+  <img src="output_pics/calssification_loss.png" alt="Sample dataset form" width="400">
+  <img src="output_pics/mAP.png" alt="Sample dataset form" width="400">
 </p>
