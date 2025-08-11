@@ -41,3 +41,16 @@ Our approach uses **Mask R-CNN** (which is implemented by [Matterport](https://g
   - Adjusted anchor ratios based on detection errors caused by Persian script similarities
 - **Multi-Format Support**: Works on **TIFF, JPG, PNG** scanned forms at A4 300dpi resolution.
 - **Privacy-Conscious Dataset**: Personal information in images is obscured while preserving detection regions.
+
+## 📂 Dataset
+- **Forms:** 25 unique templates from various administrations, reproduced in different layouts and fonts  
+- **Fonts:** 12 common Persian fonts in multiple sizes  
+- **Contributors:** Filled by 36 individuals  
+- **Total:** 300 forms (200 train, 50 val, 50 test)  
+- **Keyword Instances:** 792 occurrences of "تاریخ" (528 train, 132 val, 132 test)  
+- **Balance:** Uniform distribution across splits  
+- **Labeling:** "تاریخ" manually labeled in all forms    
+- **Acquisition:** Printed and scanned (A4, 300dpi grayscale) with HP Scanjet 4500/5550; original size 2480×3503 px TIFF → resized to 1024×1024 px  
+- **Privacy:** Lower part of each image obscured; handwritten content mostly invalid for privacy  
+- **Access:** Email `mj.gholami96@gmail.com` with request details
+
