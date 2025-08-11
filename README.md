@@ -26,12 +26,7 @@ Our approach uses **Mask R-CNN** (which is implemented by [Matterport](https://g
 - **Specialized Persian Keyword Detection**: Optimized for the printed word "تاریخ" in Persian forms, enabling precise location of adjacent handwritten date fields.
 - **Transfer Learning on Mask R-CNN**: Uses a backbone pre-trained on the MS COCO dataset to reduce training time and improve performance with limited data.
 - **Custom Anchor Configuration**: Modified anchor sizes and aspect ratios specifically tuned for Persian printed word proportions.
-- **Robust Data Augmentation**:
-  - Rotation between -10 to 10 degrees
-  - Translation up to 10% of image dimensions
-  - Contrast enhancement (1.5× pixel intensity std)
-  - Gaussian blur (σ between 0 and 2)
-  - Gaussian noise (std ≤ 5% of dynamic range)
+- **Robust Data Augmentation**: Five different data augmentation techniques were used.
 - **Performance-Tuned Training**:
   - Optimized to achieve **high recall** with default anchors
   - Optimized to achieve **high precision** with modified anchors
@@ -62,12 +57,40 @@ Our approach uses **Mask R-CNN** (which is implemented by [Matterport](https://g
 | 📧 **Access** | Request via `mj.gholami96@gmail.com` (include purpose of use) |
 
 <p align="center">
-  <img src="Dataset_Sample/5.png" alt="Sample dataset form" width="500">
+  <img src="Dataset_Sample/4.png" alt="Sample dataset form" width="400">
+  <img src="Dataset_Sample/1.png" alt="Sample dataset form" width="400">
 </p>
-<p align="right">
-  <img src="Dataset_Sample/4.png" alt="Sample dataset form" width="500">
-</p>
-<p align="left">
-  <img src="Dataset_Sample/1.png" alt="Sample dataset form" width="500">
-</p>
+
+## 🧠 Method
+
+This project detects the printed Persian keyword **"تاریخ"** in scanned handwritten forms using a **Mask R-CNN** pipeline optimized for limited-data scenarios.
+
+### 1) Model & Training Strategy
+- **Architecture:** Mask R-CNN ([Matterport](https://github.com/matterport/Mask_RCNN) implementation) with a backbone pre-trained on **[MS COCO dataset](http://cocodataset.org/#home)**.
+- **Transfer Learning:** Only the **heads** (RPN + classifier/regressor) are trained; deeper backbone layers remain frozen.
+- **Input Size:** Images are resized to **1024×1024** pixels (grayscale converted to 3-channel stack).
+- **Loss Functions:** Cross-Entropy for classification, Smooth L1 for bounding box regression.
+- **Evaluation Metric:** mAP@IoU=0.5 along with Precision, Recall, and F1-score.
+
+### 2) Anchor Optimization (RPN)
+To match the elongated proportions of Persian printed words, the RPN anchor configuration was customized:
+```python
+# configs/mask_rcnn_config.py (snippet)
+RPN_ANCHOR_SCALES    = (64, 32)       # default: (512, 256, 128, 64, 32)
+RPN_ANCHOR_RATIOS    = [2.5, 2.0, 1.0]  # default: [2, 1, 0.5]
+RPN_ANCHOR_STRIDE    = 1
+RPN_NMS_THRESHOLD    = 0.7
+DETECTION_MIN_CONFIDENCE = 0.7
+```
+### 3) Data Augmentation
+Augmentation techniques used to increase dataset diversity and improve robustness:
+
+- Rotation between -10 to 10 degrees
+- translation: up to ±10% of image dimensions
+- contrast: scale standard deviation by 1.5
+- gaussian_blur: σ between 0 and 2
+- gaussian_noise: std ≤ 5% of dynamic range
+
+Note: Rotation was removed after error analysis showed it degraded performance due to anchor orientation mismatch.
+
 
