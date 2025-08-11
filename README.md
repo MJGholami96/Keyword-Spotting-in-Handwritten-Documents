@@ -3,7 +3,7 @@
 Detect the printed Persian keyword **"تاریخ"** ("date") in scanned handwritten forms using **Mask R-CNN** with custom anchors and data augmentation.
 
 <p align="center">
-  <img src="Pictures/output_sample.jpg" alt="Sample detection" width="500">
+  <img src="output_pics/output_sample.jpg" alt="Sample detection" width="500">
 </p>
 
 ---
