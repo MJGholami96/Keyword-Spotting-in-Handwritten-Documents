@@ -126,6 +126,6 @@ Performance metrics were calculated at IoU = 0.5:
 
 <p align="center">
   <img src="output_pics/boundingbox_loss.png" alt="Sample dataset form" width="400">
-  <img src="output_pics/calssification_loss.png" alt="Sample dataset form" width="400">
+  <img src="output_pics/classification_loss.png" alt="Sample dataset form" width="400">
   <img src="output_pics/mAP.png" alt="Sample dataset form" width="400">
 </p>
