@@ -62,7 +62,12 @@ Our approach uses **Mask R-CNN** (which is implemented by [Matterport](https://g
 | 📧 **Access** | Request via `mj.gholami96@gmail.com` (include purpose of use) |
 
 <p align="center">
-  <img src="docs/sample_form.jpg" alt="Sample dataset form" width="500">
+  <img src="Dataset_Sample/5.png" alt="Sample dataset form" width="500">
 </p>
-
+<p align="right">
+  <img src="Dataset_Sample/4.png" alt="Sample dataset form" width="500">
+</p>
+<p align="left">
+  <img src="Dataset_Sample/1.png" alt="Sample dataset form" width="500">
+</p>
 
