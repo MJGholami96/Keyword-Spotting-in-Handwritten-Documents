@@ -82,6 +82,11 @@ RPN_ANCHOR_STRIDE    = 1
 RPN_NMS_THRESHOLD    = 0.7
 DETECTION_MIN_CONFIDENCE = 0.7
 ```
+<p align="center">
+  <img src="output_pics/Default_Anchor.jpg" alt="Sample dataset form" width="400">
+  <img src="output_pics/Modified_Anchor.jpg" alt="Sample dataset form" width="400">
+</p>
+
 ### 3) Data Augmentation
 Augmentation techniques used to increase dataset diversity and improve robustness:
 
