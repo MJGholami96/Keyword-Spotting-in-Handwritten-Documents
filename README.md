@@ -55,6 +55,7 @@ Our approach uses **Mask R-CNN** (which is implemented by [Matterport](https://g
 | 🔍 **Keyword Instances** | 792 occurrences of "تاریخ" <br> (528 train, 132 val, 132 test) |
 | ⚖ **Balance** | Uniform distribution across splits |
 | 🏷 **Labeling** | "تاریخ" manually labeled in all forms |
+| 🖼 **Augmentation** | Doubled training & validation sets using transformations |
 | 📠 **Acquisition** | Printed & scanned with HP Scanjet 4500/5550 (A4, 300dpi grayscale) |
 | 📏 **Image Size** | Original 2480×3503 px TIFF → resized to 1024×1024 px |
 | 🔒 **Privacy** | Lower parts of images obscured; handwritten text mostly invalid |
