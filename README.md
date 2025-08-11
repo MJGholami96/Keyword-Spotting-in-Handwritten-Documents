@@ -23,13 +23,21 @@ Our approach uses **Mask R-CNN** (which is implemented by [Matterport](https://g
 ---
 
 ## ✨ Features
-- Detects the **printed keyword "تاریخ"** in scanned forms
-- Optimized for Persian fonts and form layouts
-- **Custom anchor sizes** for higher precision
-- **Augmentation pipeline** for better generalization
-- Works with **TIFF, JPG, PNG** images
-- Includes training & inference scripts
-
----
-
-## 📁 Project Structure
+- **Specialized Persian Keyword Detection**: Optimized for the printed word "تاریخ" in Persian forms, enabling precise location of adjacent handwritten date fields.
+- **Transfer Learning on Mask R-CNN**: Uses a backbone pre-trained on the MS COCO dataset to reduce training time and improve performance with limited data.
+- **Custom Anchor Configuration**: Modified anchor sizes and aspect ratios specifically tuned for Persian printed word proportions.
+- **Robust Data Augmentation**:
+  - Rotation between -10 to 10 degrees
+  - Translation up to 10% of image dimensions
+  - Contrast enhancement (1.5× pixel intensity std)
+  - Gaussian blur (σ between 0 and 2)
+  - Gaussian noise (std ≤ 5% of dynamic range)
+- **Performance-Tuned Training**:
+  - Optimized to achieve **high recall** with default anchors
+  - Optimized to achieve **high precision** with modified anchors
+- **Small Dataset Friendly**: Designed to work effectively with only 500 training+validation images via augmentation.
+- **Error Analysis-Driven Improvements**:
+  - Removed rotation augmentation after experiments showed it reduced performance
+  - Adjusted anchor ratios based on detection errors caused by Persian script similarities
+- **Multi-Format Support**: Works on **TIFF, JPG, PNG** scanned forms at A4 300dpi resolution.
+- **Privacy-Conscious Dataset**: Personal information in images is obscured while preserving detection regions.
