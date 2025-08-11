@@ -43,14 +43,25 @@ Our approach uses **Mask R-CNN** (which is implemented by [Matterport](https://g
 - **Privacy-Conscious Dataset**: Personal information in images is obscured while preserving detection regions.
 
 ## 📂 Dataset
-- **Forms:** 25 unique templates from various administrations, reproduced in different layouts and fonts  
-- **Fonts:** 12 common Persian fonts in multiple sizes  
-- **Contributors:** Filled by 36 individuals  
-- **Total:** 300 forms (200 train, 50 val, 50 test)  
-- **Keyword Instances:** 792 occurrences of "تاریخ" (528 train, 132 val, 132 test)  
-- **Balance:** Uniform distribution across splits  
-- **Labeling:** "تاریخ" manually labeled in all forms    
-- **Acquisition:** Printed and scanned (A4, 300dpi grayscale) with HP Scanjet 4500/5550; original size 2480×3503 px TIFF → resized to 1024×1024 px  
-- **Privacy:** Lower part of each image obscured; handwritten content mostly invalid for privacy  
-- **Access:** Email `mj.gholami96@gmail.com` with request details
+
+> **Persian "تاریخ" Keyword Spotting Dataset** — A curated collection of Persian handwritten forms for printed keyword detection.
+
+| 📌 Attribute | 📄 Details |
+|--------------|-----------|
+| 🗂 **Forms** | 25 unique templates from various administrations |
+| 🔤 **Fonts** | 12 common Persian fonts in multiple sizes |
+| 🖊 **Contributors** | Filled by 36 individuals |
+| 📊 **Total Samples** | 300 forms (200 train, 50 val, 50 test) |
+| 🔍 **Keyword Instances** | 792 occurrences of "تاریخ" <br> (528 train, 132 val, 132 test) |
+| ⚖ **Balance** | Uniform distribution across splits |
+| 🏷 **Labeling** | "تاریخ" manually labeled in all forms |
+| 📠 **Acquisition** | Printed & scanned with HP Scanjet 4500/5550 (A4, 300dpi grayscale) |
+| 📏 **Image Size** | Original 2480×3503 px TIFF → resized to 1024×1024 px |
+| 🔒 **Privacy** | Lower parts of images obscured; handwritten text mostly invalid |
+| 📧 **Access** | Request via `mj.gholami96@gmail.com` (include purpose of use) |
+
+<p align="center">
+  <img src="docs/sample_form.jpg" alt="Sample dataset form" width="500">
+</p>
+
 
