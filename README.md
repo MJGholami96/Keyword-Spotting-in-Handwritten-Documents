@@ -119,8 +119,13 @@ Performance metrics were calculated at IoU = 0.5:
 - **Highest recall** was achieved with default anchors and augmentation (97.7%).  
 - **Highest precision** was achieved with modified anchors and augmentation (99.1%).  
 - Anchor modification increased precision but reduced recall.  
-- Data augmentation significantly improved recall across both anchor configurations.  
+- Data augmentation significantly improved recall across both anchor configurations.
+
+### Evaluation Charts
+- Default anchor scenario in two stages of training and validation
 
 <p align="center">
-  <img src="docs/results_chart.png" alt="Results comparison chart" width="600">
+  <img src="output_pics/boundingbox_loss.jpg" alt="Sample dataset form" width="400">
+  <img src="output_pics/calssification_loss.jpg" alt="Sample dataset form" width="400">
+  <img src="output_pics/mAP.jpg" alt="Sample dataset form" width="400">
 </p>
