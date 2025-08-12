@@ -134,9 +134,9 @@ Performance metrics were calculated at IoU = 0.5:
 - Detection output sample for Default anchor scenario (best scenario in our application)
 
 <p align="center">
-  <img src="output_pics/detection_sample1.png" alt="Sample dataset form" width="500">
-  <img src="output_pics/detection_sample4.png" alt="Sample dataset form" width="500">
-  <img src="output_pics/detection_sample3.png" alt="Sample dataset form" width="500">
+  <img src="output_pics/detection_sample1.png" alt="Sample dataset form" width="450">
+  <img src="output_pics/detection_sample4.png" alt="Sample dataset form" width="450">
+  <img src="output_pics/detection_sample3.png" alt="Sample dataset form" width="450">
 </p>
   
 ## 🛠 Error Analysis
