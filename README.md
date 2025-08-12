@@ -139,3 +139,9 @@ Performance metrics were calculated at IoU = 0.5:
   <img src="output_pics/detection_sample3.png" alt="Sample dataset form" width="500">
 </p>
   
+## 🛠 Error Analysis
+
+For a detailed analysis of detection errors, missed instances, and their possible causes,  
+please refer to the original conference paper:
+
+[Spotting of a Particular Printed Word in Farsi Handwritten Forms Using Deep Learning — IEEE Xplore](https://ieeexplore.ieee.org/document/10668131)
