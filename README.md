@@ -145,3 +145,13 @@ For a detailed analysis of detection errors, missed instances, and their possibl
 please refer to the original conference paper:
 
 [Spotting of a Particular Printed Word in Farsi Handwritten Forms Using Deep Learning — IEEE Xplore](https://ieeexplore.ieee.org/document/10668131)
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome.
+Feel free to check the issues page for current tasks.
+
+## 📄 License
+MIT License — see LICENSE for details.
+
+## 📚 Citation
+If you use this work in your research, please cite: [Spotting of a Particular Printed Word in Farsi Handwritten Forms Using Deep Learning — IEEE Xplore](https://ieeexplore.ieee.org/document/10668131) 
