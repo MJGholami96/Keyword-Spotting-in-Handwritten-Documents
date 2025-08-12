@@ -135,7 +135,7 @@ Performance metrics were calculated at IoU = 0.5:
 
 <p align="center">
   <img src="output_pics/detection_sample1.png" alt="Sample dataset form" width="500">
-  <img src="output_pics/detection_sample2.png" alt="Sample dataset form" width="500">
+  <img src="output_pics/detection_sample4.png" alt="Sample dataset form" width="500">
   <img src="output_pics/detection_sample3.png" alt="Sample dataset form" width="500">
 </p>
   
