@@ -18,7 +18,7 @@ The system is designed for automating document processing tasks such as:
 Our approach uses **Mask R-CNN** (which is implemented by [Matterport](https://github.com/matterport/Mask_RCNN) ) with:
 - **Transfer learning** from [MS COCO dataset](http://cocodataset.org/#home)
 - **Custom anchor optimization** for Persian word shapes
-- **Data augmentation** to boost recall and robustness
+- **Data augmentation** to boost  recall and robustness
 
 ---
 
